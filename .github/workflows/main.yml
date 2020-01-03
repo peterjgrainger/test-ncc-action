@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  test_ncc:
+    runs-on: ubuntu-latest
+    name: compile ncc
+    steps:
+    - name: ncc
+      id: hello
+      uses: peterjgrainger/action-ncc@master
+      with:
+        entry-file: 'src/index.js'
