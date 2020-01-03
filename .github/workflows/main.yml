@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: compile ncc
     steps:
+    - uses: actions/checkout@v1
     - name: ncc
       id: hello
       uses: peterjgrainger/action-ncc@master
